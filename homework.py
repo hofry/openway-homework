@@ -2,7 +2,6 @@
 
 import os, sys
 import argparse
-#import svn.remote
 import sqlite3
 import zipfile
 import tempfile
