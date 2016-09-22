@@ -51,12 +51,13 @@ def rm_work_dir(tmp_dir):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file', help='input file', required=True)
+    parser.add_argument('-f', '--file', help='input file with svn links', required=True)
+    parser.add_argument('-d', '--directory', help='archives directory (default is /tmp/archives)', default='/tmp/archives')
     args = parser.parse_args()
     tmp_dir = tempfile.mkdtemp()
     tmp_name = str(', '.join(tmp_dir.rstrip('/').split('/')[-1:]))
     db_name = "transactions.db"
-    arch_dir = os.getcwd()+'/archives'
+    arch_dir = args.directory
     if not os.path.exists(arch_dir):
         os.mkdir(arch_dir)
     start = int(time.time())
