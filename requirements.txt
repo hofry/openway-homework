@@ -17,7 +17,6 @@ pycrypto==2.0.1
 pycurl==7.19.0
 pygpgme==0.1
 pyOpenSSL==0.13.1
-python-dateutil==2.5.3
 python-default-encoding==0.1
 python-dmidecode==3.10.13
 python-ldap==2.3.10
@@ -25,10 +24,8 @@ python-meh==0.11
 python-nss==0.16.0
 pyxdg==0.18
 scdate==1.9.60
-six==1.10.0
 slip==0.2.20
 smbc==1.0
 SSSDConfig==1.13.3
-svn==0.3.42
 urlgrabber==3.9.1
 yum-metadata-parser==1.1.2
